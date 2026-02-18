@@ -1,0 +1,46 @@
+.box {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #fff4f0;
+  border: 1px solid #f5d0c0;
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  animation: shake 0.4s ease;
+}
+
+[data-theme="dark"] .box {
+  background: #2a1810;
+  border-color: #5a2a18;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+.emoji {
+  font-size: 1.4rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.text {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
